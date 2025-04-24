@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const imageContainer = document.querySelector('.image-container');
     const containerWidth = imageContainer.offsetWidth;
     const containerHeight = imageContainer.offsetHeight;
-    const imageSize = 150; // Match the CSS size
-    let speedMultiplier = 3; // Increase for faster bouncing
+    const imageSize = 250; // Match the CSS size
+    let speedMultiplier = 6; // Increase for faster bouncing
 
     const imageSources = [
         'images/yarcollick.jpg',
