@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     const imageContainer = document.querySelector('.image-container');
 
-    const correctPassword = 'iluvyarco'; // The password
+    const correctPasswordYarco = 'iluvyarco'; // The password for main site
+    const correctPasswordNotes = 'iluvyavid'; // The password for notes page
 
     submitButton.addEventListener('click', checkPassword);
     passwordInput.addEventListener('keypress', function(event) {
@@ -18,12 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkPassword() {
         const enteredPassword = passwordInput.value;
-        if (enteredPassword === correctPassword) {
+
+        if (enteredPassword === correctPasswordYarco) {
             // Hide password section, show main content
             passwordSection.style.display = 'none';
             mainContent.style.display = 'block';
             // Initialize the bouncing images animation ONLY after password is correct
             initializeAnimation();
+        } else if (enteredPassword === correctPasswordNotes) {
+            // Redirect to the notes page
+            window.location.href = 'notes.html';
         } else {
             // Show error message briefly
             errorMessage.style.display = 'inline';

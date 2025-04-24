@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to existing styles -->
+    <style>
+        /* Add some specific styles for the notes page */
+        body {
+            text-align: left; /* Override centered text for notes */
+            padding: 20px;
+            overflow: auto; /* Allow scrolling if notes are long */
+        }
+        #notes-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        textarea {
+            width: 100%;
+            min-height: 300px;
+            margin-bottom: 10px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #save-status {
+            margin-top: 10px;
+            color: green;
+            display: none; /* Hidden initially */
+        }
+    </style>
+</head>
+<body>
+    <div id="notes-container">
+        <h1>Notes for Yarco & David</h1>
+        <textarea id="notes-area" placeholder="Leave your notes here..."></textarea>
+        <button id="save-notes">Save Notes</button>
+        <p id="save-status">Notes saved!</p>
+    </div>
+
+    <script src="notes.js"></script>
+</body>
+</html> 
