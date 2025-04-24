@@ -20,8 +20,8 @@ h1 {
 
 .moving-image {
     position: absolute;
-    width: 250px; /* Adjusted size */
-    height: 250px; /* Adjusted size */
+    width: 125px; /* Adjusted size */
+    height: 125px; /* Adjusted size */
     /* Start animation */
     /* animation: moveUpDown 5s infinite ease-in-out alternate; */ /* Removed CSS animation */
     /* Use a placeholder background if no image src is set */
