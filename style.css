@@ -20,21 +20,22 @@ h1 {
 
 .moving-image {
     position: absolute;
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
     /* Start animation */
-    animation: moveUpDown 5s infinite ease-in-out alternate;
+    /* animation: moveUpDown 5s infinite ease-in-out alternate; */ /* Removed CSS animation */
     /* Use a placeholder background if no image src is set */
-    background-color: lightblue;
+    /* background-color: lightblue; */ /* Removed placeholder background */
     border-radius: 5px;
+    object-fit: cover; /* Ensure images cover the area without distortion */
 }
 
 /* Define the up and down animation */
-@keyframes moveUpDown {
-    0% {
+/* @keyframes moveUpDown { 
+    0% { 
         transform: translateY(0);
-    }
-    100% {
-        transform: translateY(calc(80vh - 60px)); /* Move down within the container height */
-    }
-} 
+    } 
+    100% { 
+        transform: translateY(calc(80vh - 60px)); // Move down within the container height 
+    } 
+} */ /* Removed animation definition */ 
