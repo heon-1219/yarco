@@ -38,4 +38,13 @@ h1 {
     100% { 
         transform: translateY(calc(80vh - 60px)); // Move down within the container height 
     } 
-} */ /* Removed animation definition */ 
+} */ /* Removed animation definition */
+
+#password-section {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#main-content {
+    display: none; /* Hide main content initially */
+} 

@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>I ❤️ U Yarco</h1>
-    <div class="image-container">
-        <!-- Images will be added here by JavaScript -->
+    <div id="password-section">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button id="submit-password">Enter</button>
+        <p id="error-message" style="color: red; display: none;">Incorrect password.</p>
     </div>
+
+    <div id="main-content">
+        <h1>I ❤️ U Yarco</h1>
+        <div class="image-container">
+            <!-- Images will be added here by JavaScript -->
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html> 
